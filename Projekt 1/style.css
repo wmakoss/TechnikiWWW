@@ -1,0 +1,267 @@
+*
+{
+	box-sizing: border-box;
+}
+
+body
+{
+	margin:0px;
+	padding:0px;
+	border:0px;
+	font-family: 'Nunito', sans-serif;
+	font-weight: 700;
+	font-size:20px;
+	color:white;
+	background-color:rgb(68, 68, 68);
+}
+
+a
+{
+	text-decoration: none;
+	color: inherit;
+	transition: color .5s;
+}
+
+a:hover
+{
+	text-decoration: none;
+	color: red;
+}
+
+.gamedescription a
+{
+	color: rgb(225, 103, 124);
+	transition: color .5s;
+	text-decoration: none;
+}
+
+.gamedescription a:hover
+{
+	text-decoration: none;
+	color: red;
+}
+
+#games
+{
+	width: 90vw;
+	margin-left: auto; /* 5vw */
+	margin-right: auto; /* 5vw */
+	margin-top: 120px;
+}
+
+#upper
+{
+	align-items: center;
+	display: flex;
+	bottom: auto;
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	background-color:black;
+	height: 100px;
+	padding: 0 20px;
+	z-index: 1000;
+}
+
+#logo
+{
+	margin-top:auto;
+	margin-bottom:auto;
+	cursor:pointer;
+}
+
+#logospan
+{
+	color: red;
+	font-size: 70px;
+	transition: text-shadow 0.3s;
+	margin-left: 20px;
+}
+
+#logospan:hover
+{
+	text-shadow: 0px 0px 15px yellow;
+}
+
+.upper-button
+{
+    text-align:right;
+    margin-left: 10px;
+    margin-right: 20px;
+    color: gray;
+	transition: color .5s;
+}
+
+.upper-button:hover
+{
+	color:white;
+	cursor:pointer;
+}
+
+#left-upper-button
+{
+	margin-left: auto;
+}
+
+#bottombox
+{
+    position: absolute;
+    height: 45px;
+    width: 100%;
+    bottom: 0px;
+	box-sizing: border-box;
+    display: flex;
+}
+
+#bottomtext
+{
+	font-size:12px;
+	color:black;
+	margin: auto;
+	display: inline !important;
+}
+
+select
+{
+	font-size: 20px;
+	border-radius: 25px;
+	margin: 10px;
+	transition: box-shadow .5s;
+	padding: 5px 10px 5px 10px;
+}
+
+select:hover
+{
+	box-shadow: 0px 0px 30px blue;
+}
+
+select:focus
+{
+	box-shadow: 0px 0px 30px blue;
+}
+
+input[type=submit], input[type=button]
+{
+	font-size: 20px;
+	border-radius: 25px;
+	margin: 10px;
+	background-color: #4CAF50;
+	transition: background-color 0.3;
+	padding: 10px 20px 10px 20px;
+}
+
+input[type=submit]:hover, input[type=button]:hover
+{
+	background-color: #45a049;
+	box-shadow: 0px 0px 30px blue;
+}
+
+input[type=submit]:focus
+{
+	box-shadow: 0px 0px 30px blue;
+}
+
+.game
+{
+	width: 200px;
+	height: 200px;
+	border-radius: 25px;
+	background-color: black;
+	margin: 30px;
+	float: left;
+	transition: box-shadow .5s;
+	text-align: center;
+}
+
+.game:hover
+{
+	box-shadow: 0px 0px 50px red;
+}
+
+.gameimg
+{
+	margin-top: 15px;
+	width: 130px;
+	height: 130px;
+}
+
+.gameopen
+{
+	width: 80vw;
+	border-radius: 25px;
+	background-color: black;
+	margin: 30px;
+	padding: 20px;
+	float: left;
+}
+
+.gameopenimg
+{
+	margin-top: 15px;
+	width: 130px;
+	height: 130px;
+	float: left;
+}
+
+.gamename
+{
+	font-size: 50px;
+	float: left;
+	margin-left: 50px;
+	line-height: 130px;
+}
+
+.gamedescription
+{
+	margin-left: 20px;
+}
+
+.gamefilteroption
+{
+	color: orange;
+}
+
+.buybutton
+{
+	background-color: #45a049;
+	float: right;
+}
+
+.formdiv
+{
+	float: left;
+}
+
+@media only screen and (max-width: 900px) /* and (min-width: 300px) */
+{
+    .formdiv
+	{
+        float: inherit;
+    }
+}
+
+@media only screen and (max-width: 750px)
+{
+	#upper
+	{
+		height: 250px;
+		flex-direction: column;
+	}
+
+	#left-upper-button
+	{
+		margin-left: 10px;
+	}
+
+	.upper-button
+	{
+		margin-top: 30px;
+	}
+
+	#games
+	{
+		margin-top: 280px;
+	}
+
+}

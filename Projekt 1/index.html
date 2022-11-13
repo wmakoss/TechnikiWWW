@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sklep gier</title>
+    <meta name="author" content="Makosiej Wojciech" />
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+    <div id="upper">
+        <a href="index.html">
+        <div id="logo">
+            <span id="logospan">Sklep gier</span>
+        </div>
+        </a>
+        <a class="upper-button" id="left-upper-button" href="#Zarejestruj"><span id="login-button" class="upper-button" >Zarejestruj się</span></a>
+        <a class="upper-button" href="#Zaloguj"><span id="login-button" class="upper-button" >Zaloguj się</span></a>
+    </div>
+    <div id="games">
+        <form action="" method="GET">
+            <div class="formdiv">
+            Zalecany Wiek:
+            <select name="age" id="age">
+                <option value="all">dowolny</option>
+                <option value="powyzej-16">powyzej 16</option>
+                <option value="ponizej-16">ponizej 16</option>
+            </select>
+            </div>
+            <div class="formdiv">
+            Kategoria:
+            <select name="category" id="category">
+                <option value="all">dowolna</option>
+                <option value="Strzelanka">Strzelanka</option>
+                <option value="gra-z-otwartym-swiatem">gra z otwartym światem</option>
+                <option value="gra-z-pojazdami">gra z pojazdami</option>
+            </select>
+            </div>
+            <div class="formdiv">
+            <input type="button" value="Filtruj" onclick="filter()" />
+            </div>
+            <div style="clear:both"></div>
+        </form>
+
+        <a href="counterstrike.html"><div class="game powyzej-16 Strzelanka"><img class="gameimg" src="img/counterstrike.png" /><br />Counter Strike</div></a>
+        <a href="minecraft.html"><div class="game ponizej-16 gra-z-otwartym-swiatem"><img class="gameimg" src="img/minecraft.png" /><br />Minecraft</div></a>
+        <a href="rocketleague.html"><div class="game ponizej-16 gra-z-pojazdami"><img class="gameimg" src="img/rocketleague.jpg" /><br />Rocket league</div></a>
+        <a href="worldoftanks.html"><div class="game powyzej-16 Strzelanka gra-z-pojazdami"><img class="gameimg" src="img/worldoftanks.png" /><br />World of Tanks</div></a>
+        <a href="rust.html"><div class="game powyzej-16 Strzelanka gra-z-pojazdami gra-z-otwartym-swiatem"><img class="gameimg" src="img/rust.png" /><br />Rust</div></a>
+        <a href="amongus.html"><div class="game ponizej-16"><img class="gameimg" src="img/amongus.png" /><br />Among Us</div></a>
+        <a href="gta5.html"><div class="game powyzej-16 Strzelanka gra-z-pojazdami gra-z-otwartym-swiatem"><img class="gameimg" src="img/gta5.jfif" /><br />Grand Theft Auto V</div></a>
+
+        <a href="counterstrike.html"><div class="game powyzej-16 Strzelanka"><img class="gameimg" src="img/counterstrike.png" /><br />Counter Strike</div></a>
+        <a href="minecraft.html"><div class="game ponizej-16 gra-z-otwartym-swiatem"><img class="gameimg" src="img/minecraft.png" /><br />Minecraft</div></a>
+        <a href="rocketleague.html"><div class="game ponizej-16 gra-z-pojazdami"><img class="gameimg" src="img/rocketleague.jpg" /><br />Rocket league</div></a>
+        <a href="worldoftanks.html"><div class="game powyzej-16 Strzelanka gra-z-pojazdami"><img class="gameimg" src="img/worldoftanks.png" /><br />World of Tanks</div></a>
+        <a href="rust.html"><div class="game powyzej-16 Strzelanka gra-z-pojazdami gra-z-otwartym-swiatem"><img class="gameimg" src="img/rust.png" /><br />Rust</div></a>
+        <a href="amongus.html"><div class="game ponizej-16"><img class="gameimg" src="img/amongus.png" /><br />Among Us</div></a>
+        <a href="gta5.html"><div class="game powyzej-16 Strzelanka gra-z-pojazdami gra-z-otwartym-swiatem"><img class="gameimg" src="img/gta5.jfif" /><br />Grand Theft Auto V</div></a>
+        <a href="counterstrike.html"><div class="game powyzej-16 Strzelanka"><img class="gameimg" src="img/counterstrike.png" /><br />Counter Strike</div></a>
+        <a href="minecraft.html"><div class="game ponizej-16 gra-z-otwartym-swiatem"><img class="gameimg" src="img/minecraft.png" /><br />Minecraft</div></a>
+        <a href="rocketleague.html"><div class="game ponizej-16 gra-z-pojazdami"><img class="gameimg" src="img/rocketleague.jpg" /><br />Rocket league</div></a>
+        <a href="worldoftanks.html"><div class="game powyzej-16 Strzelanka gra-z-pojazdami"><img class="gameimg" src="img/worldoftanks.png" /><br />World of Tanks</div></a>
+        <a href="rust.html"><div class="game powyzej-16 Strzelanka gra-z-pojazdami gra-z-otwartym-swiatem"><img class="gameimg" src="img/rust.png" /><br />Rust</div></a>
+        <a href="amongus.html"><div class="game ponizej-16"><img class="gameimg" src="img/amongus.png" /><br />Among Us</div></a>
+        <a href="gta5.html"><div class="game powyzej-16 Strzelanka gra-z-pojazdami gra-z-otwartym-swiatem"><img class="gameimg" src="img/gta5.jfif" /><br />Grand Theft Auto V</div></a>
+
+        <div style="clear: both;"></div>
+    </div>
+</body>
+</html>
