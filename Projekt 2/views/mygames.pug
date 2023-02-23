@@ -1,0 +1,27 @@
+extends layout
+
+block content
+    #games
+        form(action='' method='GET')
+            | Zalecany Wiek:
+            select#age(name='age')
+                option(value='all') dowolny
+                option(value='powyzej-16') powyzej 16
+                option(value='ponizej-16') ponizej 16
+            |     Kategoria:
+            select#category(name='category')
+                option(value='all') dowolna
+                option(value='Strzelanka') Strzelanka
+                option(value='gra-z-otwartym-swiatem') gra z otwartym światem
+                option(value='gra-z-pojazdami') gra z pojazdami
+            input(type='button' value='Filtruj' onclick='filter()')
+        center
+            h1(style="color: yellow;font-size:50px;") Zakupione gry: 
+            each gameitem in gamesarray
+                a(href="game?id="+gameitem.gameid)
+                    div(class="game "+gameitem.classlist)
+                        img.gameimg(src=gameitem.iconurl)
+                        br
+                        | #{gameitem.name}
+            div(style='clear: both;')
+

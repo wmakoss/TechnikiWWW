@@ -1,0 +1,26 @@
+extends layout
+
+block content
+    #games
+        .gameopen
+            img.gameopenimg(src=gameinfo.iconurl)
+            br
+            .gamename #{gameinfo.name}
+            if userid > 0
+                if mygame
+                    div(style='float: right;') Posiadasz wybraną grę
+                else
+                    a(href="buygame?id="+gameinfo.id)
+                        input.buybutton(type='submit' value='Kup')
+            div(style='clear:both')
+            .gamedescription
+                p
+                    span.gamefilteroption Zalecany Wiek:
+                    |	#{gameinfo.age}
+                p
+                    span.gamefilteroption Kategoria:
+                    |	#{gameinfo.category}
+                a(href=gameinfo.link) Link do wiki
+                p #{gameinfo.description1}
+                p #{gameinfo.description2}
+                p #{gameinfo.description3}

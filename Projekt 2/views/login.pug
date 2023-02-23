@@ -1,0 +1,19 @@
+extends layout
+
+block content
+    #games
+        .gameopen(style='margin-top: 200px;padding: 30px;width: 700px;font-size: 30px;')
+            .gamedescription
+                form(action='' method='post')
+                    h2(style='color: orange') Zaloguj się
+                    span Login: 
+                    input(style='font-size: 30px;float: right;margin-right: 30px;' type='text' name='login')
+                    br
+                    br
+                    span Hasło: 
+                    input(style='font-size: 30px;float: right;margin-right: 30px;' type='password' name='password')
+                    br
+                    br
+                    if error != undefined
+                        span(style='color: red; font-size: 18px') #{error}
+                    input.buybutton(style='margin-top: 30px;' type='submit' value='Zaloguj się')

@@ -1,0 +1,6 @@
+extends layout
+
+block content
+  h1(style="margin-left:30px;margin-top: 140px;")= message
+  h2(style="margin-left:30px;")= error.status
+  pre(style="margin-left:30px;") #{error.stack}
